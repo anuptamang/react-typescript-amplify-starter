@@ -1,0 +1,279 @@
+#root {
+	position: relative;
+	overflow: hidden;
+}
+
+body {
+	background: $blue-300;
+	font-family: $font-poppins;
+}
+
+.wrapper {
+	min-height: 100vh;
+}
+
+img {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+
+.list-unstyled {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	> li {
+		margin-bottom: 10px;
+	}
+}
+
+.list-inline {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	> li {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.justify-content-end {
+	justify-content: flex-end !important;
+}
+
+.align-items-center {
+	align-items: center !important;
+}
+
+.ant-layout {
+	background: $blue-300;
+}
+
+.form-input {
+	margin-bottom: 30px;
+
+	.ant-form-item-control-input {
+		min-height: 0;
+	}
+
+	.ant-form-item-control-input-content {
+		// border: 1px solid $white;
+
+		// padding: 5px 30px;
+
+		.ant-input {
+			border-radius: 8px;
+			height: 78px;
+			color: $black-500;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 26px;
+			font-family: $font-mulish;
+			border: 0;
+			padding: 5px 30px;
+			box-shadow: 3.08571px 3.08571px 6.17143px rgba(114, 142, 171, 0.1),
+				-3.08571px -3.08571px 30.8571px #ffffff,
+				6.17143px 6.17143px 30.8571px rgba(111, 140, 176, 0.41);
+			background: $blue-300 !important;
+
+			&::placeholder {
+				color: $gray-600;
+				opacity: 1;
+			}
+		}
+	}
+
+	.ant-input-affix-wrapper {
+		background: $blue-300 !important;
+		padding: 0 20px 0 0 !important;
+		border: 0 !important;
+		border-radius: 8px;
+		box-shadow: 3.08571px 3.08571px 6.17143px rgba(114, 142, 171, 0.1),
+			-3.08571px -3.08571px 30.8571px #ffffff,
+			6.17143px 6.17143px 30.8571px rgba(111, 140, 176, 0.41), -2px -2px 0 #fff,
+			2px -2px 0 #fff;
+
+		.ant-input {
+			border: 0;
+			box-shadow: none;
+			background: $blue-300 !important;
+			border-radius: 8px 0 0 8px !important;
+		}
+	}
+}
+
+.ant-input-suffix {
+	.anticon {
+		display: block;
+	}
+
+	.hide {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: 1px;
+			right: 1px;
+			height: 2px;
+			background: $gray-700;
+			z-index: 2;
+			transform: rotate(-45deg);
+			pointer-events: none;
+		}
+	}
+}
+
+.info-holder {
+	padding: 40px 0 50px;
+	text-align: center;
+	color: $black-500;
+	font-size: 20px;
+	line-height: 24px;
+	transition: color 0.3s linear;
+
+	a,
+	.link {
+		color: inherit;
+		cursor: pointer;
+		text-transform: capitalize;
+		text-decoration: underline;
+
+		&:hover {
+			color: $purple;
+		}
+	}
+}
+
+.btn {
+	background: linear-gradient(313.32deg, #262626 8.79%, #707580 93.86%);
+	box-shadow: 3.08571px 3.08571px 6.17143px rgba(114, 142, 171, 0.1),
+		-3.08571px -3.08571px 30.8571px #ffffff,
+		6.17143px 6.17143px 30.8571px rgba(111, 140, 176, 0.41);
+	border: 0;
+	margin: 0;
+	height: 78px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: $white;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 900;
+	font-family: $font-mulish;
+	border-radius: 8px;
+	min-width: 170px;
+	transition: opacity 300ms linear;
+	padding: 15px 50px;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&:disabled {
+		background: linear-gradient(
+			313.32deg,
+			#262626 8.79%,
+			#707580 93.86%
+		) !important;
+		opacity: 0.8;
+		color: $white !important;
+	}
+
+	&.lg {
+		width: 100%;
+	}
+}
+
+.ant-form-item-explain {
+	position: absolute;
+	top: 20px;
+	left: 100%;
+	margin: 0 0 0 20px;
+	min-width: 300px;
+	font-family: $font-mulish;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	padding: 5px 0 5px 30px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 8px;
+		background: url(../../assets/ico-error.svg) no-repeat;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.tooltip-with-info {
+	padding: 50px 0 0;
+	color: $black-500;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 600;
+	font-family: $font-mulish;
+	text-transform: capitalize;
+	text-align: center;
+
+	.anticon {
+		margin-left: 10px;
+		top: 1px;
+		position: relative;
+	}
+}
+
+.ant-tooltip {
+	&-inner {
+		box-shadow: 3.08571px 3.08571px 6.17143px rgba(114, 142, 171, 0.1),
+			-3.08571px -3.08571px 30.8571px #ffffff,
+			6.17143px 6.17143px 30.8571px rgba(111, 140, 176, 0.41), -2px -2px 0 #fff,
+			2px -2px 0 #fff;
+		background: $blue-300;
+		border-radius: 8px;
+		padding: 15px 20px;
+		color: $black-500;
+		font-size: 18px;
+		line-height: 28px;
+		width: 450px;
+	}
+
+	&-arrow {
+		display: none !important;
+	}
+}
+
+.tooltip-holder {
+	font-family: $font-mulish;
+
+	.title {
+		display: block;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+
+	ol {
+		margin: 0;
+		padding-left: 20px;
+	}
+}
+
+.input-hidden {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	visibility: hidden;
+}
+
+.has-bg {
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}

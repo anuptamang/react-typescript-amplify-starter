@@ -1,0 +1,20 @@
+// Ant design styles
+@import '~antd/dist/antd.css';
+
+// style helpers
+@import './helpers/functions';
+@import './helpers/mixins';
+@import './helpers/include-media';
+@import './base/variables';
+
+// base styles
+@import './base/typography';
+
+// styles
+@import './layout/common';
+@import './components/animations';
+@import './components/authHeader';
+@import './components/authFooter';
+@import './components/headingTitle';
+@import './components/otpHolder';
+@import './components/dashboard';

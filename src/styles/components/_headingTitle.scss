@@ -1,0 +1,20 @@
+.heading-title {
+	margin-bottom: 40px;
+
+	small {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 26px;
+	}
+
+	h1 {
+		display: block;
+		color: $black-400;
+		font-weight: 900;
+		font-family: $font-mulish;
+		font-size: 50px;
+		line-height: 62px;
+	}
+}

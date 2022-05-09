@@ -1,0 +1,49 @@
+.loading {
+	width: 30px;
+	height: 30px;
+	border: 2px solid rgba(#141316, 0.3);
+	border-radius: 50%;
+	border-top-color: #0a0a0a;
+	animation: spin 1s ease-in-out infinite;
+	-webkit-animation: spin 1s ease-in-out infinite;
+	left: calc(50% - 15px);
+	top: calc(50% - 15px);
+	position: fixed;
+	z-index: 88;
+}
+
+.spinner {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	border-top-color: white;
+	animation: spin 1s ease-in-out infinite;
+	-webkit-animation: spin 1s ease-in-out infinite;
+	z-index: 1;
+}
+
+.spinnerBlue {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #0000ff4d;
+	border-radius: 50%;
+	border-top-color: #0000ff;
+	animation: spin 1s ease-in-out infinite;
+	-webkit-animation: spin 1s ease-in-out infinite;
+	z-index: 1;
+}
+
+@keyframes spin {
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
